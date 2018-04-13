@@ -15,10 +15,10 @@ default[:soundloud][:environment] = {
   "DATABASE_URL": node[:soundloud][:database_url],
   "RAILS_ENV": node[:soundloud][:rails_env],
   "RAILS_LOG_TO_STDOUT": node[:soundloud][:log_to_stdout],
-  "S3_BUCKET": node[:soundloud][:s3_bucket],
-  "S3_REGION": node[:soundloud][:s3_region],
-  "S3_ACCESS_KEY_ID": node[:soundloud][:s3_access_key_id],
-  "S3_SECRET_ACCESS_KEY": node[:soundloud][:s3_secret_access_key]
+  "s3_bucket": node[:soundloud][:s3_bucket],
+  "s3_region": node[:soundloud][:s3_region],
+  "s3_access_key_id": node[:soundloud][:s3_access_key_id],
+  "s3_secret_access_key": node[:soundloud][:s3_secret_access_key]
 }
 
 default[:soundloud][:start_cmd] = "unicorn -E production -c /opt/unicorn.rb"
