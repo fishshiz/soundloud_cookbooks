@@ -17,7 +17,7 @@ default[:soundloud][:environment] = {
   "RAILS_LOG_TO_STDOUT": node[:soundloud][:log_to_stdout],
   "S3_BUCKET": node[:soundloud][:s3_bucket],
   "S3_REGION": node[:soundloud][:s3_region],
-  "S3_ACCESS_REGION": node[:soundloud][:s3_access_region],
+  "S3_ACCESS_KEY_ID": node[:soundloud][:s3_access_key_id],
   "S3_SECRET_ACCESS_KEY": node[:soundloud][:s3_secret_access_key]
 }
 
