@@ -36,7 +36,7 @@ case "$1" in
         
         <% if node[:soundloud].attribute?('cdn_host') %>
         git_commit=`cd ${dir}; git rev-parse HEAD`
-        export CDN_HOST="<%= node[:soundloud][:cdn_host] %>/${git_commit}/"
+        export CDN_HOST="<%= node[:soundloud][:cdn_host] %>/"
         <% else %>
         export RAILS_SERVE_STATIC_FILES="true"
         <% end %>
