@@ -22,7 +22,7 @@ end
 
 execute "Install Gems" do
   cwd node[:soundloud][:path]
-  command "bundle install"
+  command "sudo bundle install"
   user "ubuntu"
   # group new_resource.group
   environment ({"HOME"=>"/home/ubuntu"})
